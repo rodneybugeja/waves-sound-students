@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071528">
+  <meta name="description" content="Interactive MATSEC SEC 24 Physics 2027 Waves & Sound presentation.">
+  <title>Waves & Sound | Student Edition | MATSEC Physics 2027</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23071528'/%3E%3Cpath d='M4 32c8-22 16 22 24 0s16 22 24 0 8 0 8 0' fill='none' stroke='%2358e6ff' stroke-width='5'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="v22.css"><link rel="stylesheet" href="v21.css"><link rel="stylesheet" href="v20.css"><link rel="stylesheet" href="motion.css"><link rel="stylesheet" href="revision.css"><link rel="stylesheet" href="v16.css">
+  <link rel="stylesheet" href="v2.css"><link rel="stylesheet" href="v3.css"><link rel="stylesheet" href="v4.css"><link rel="stylesheet" href="v5.css"><link rel="stylesheet" href="v6.css"><link rel="stylesheet" href="v7.css"><link rel="stylesheet" href="v8.css"><link rel="stylesheet" href="v9.css"><link rel="stylesheet" href="v10.css"><link rel="stylesheet" href="v11.css"><link rel="stylesheet" href="v12.css"><link rel="stylesheet" href="v13.css"><link rel="stylesheet" href="v14.css"><link rel="stylesheet" href="v15.css"><link rel="stylesheet" href="waves.css"><link rel="stylesheet" href="v17.css"><link rel="stylesheet" href="v18.css"><link rel="stylesheet" href="v19.css">
+  <script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={autoplay:"on",unmuteOverlay:"hidden",backgroundColor:"#ffffff",letterbox:"on",warnOnUnsupportedContent:false,showSwfDownload:false,splashScreen:false,allowScriptAccess:false};</script>
+  <script src="ruffle/ruffle.js"></script>
+  <link rel="stylesheet" href="student.css">
+
+<link rel="manifest" href="./manifest.webmanifest">
+<meta name="theme-color" content="#122b4d">
+<link rel="apple-touch-icon" href="./icon-192.png">
+<link rel="stylesheet" href="./pwa.css">
+</head>
+<body class="student-edition">
+  <div class="student-edition-badge">STUDENT EDITION • V23</div>
+  <main id="viewport"><section id="stage" aria-live="polite"></section></main>
+  <nav id="controls" aria-label="Presentation controls">
+    <div class="control-group"><button id="firstBtn" title="First slide">|◀</button><button id="prevBtn" title="Previous slide">◀</button></div>
+    <div class="deck-status"><span id="counter"></span><span id="slideTitle"></span></div>
+    <div class="control-group right">
+      <div class="jump-control"><span>Slide</span><input id="jumpInput" type="number" inputmode="numeric" min="1" value="1"><button id="jumpBtn" type="button">Go</button></div>
+      <button id="mediaBtn" class="media-control" title="Pause animation (P)">⏸ <span>Pause</span></button>
+      <button id="studentLessonsBtn" class="student-lessons-control" title="Choose another lesson">📚 <span>Lessons</span></button><button id="studentActivitiesBtn" title="Student activities">🎯 <span>Activities</span></button><button id="studentNotesBtn" title="My lesson notes">🗒 <span>My Notes</span></button><button id="assessmentBtn" title="Assessment book">📝 <span>Assess</span></button><button id="mythbustersBtn" class="mythbusters-control" title="MythBusters critical-thinking activities">🧪 <span>MythBusters</span></button><button id="teacherToolsBtn" title="Teacher tools (K)">🧰 <span>Teacher</span></button><button id="thumbBtn" title="All slides (T)">▦</button><button id="fullBtn" title="Full screen (F)">⛶</button><button id="nextBtn">▶</button><button id="lastBtn">▶|</button>
+    </div>
+  </nav>
+  <aside id="thumbPanel"><button id="closeThumbs">✕</button><div id="thumbGrid"></div></aside>
+  <aside id="teacherToolsPanel">
+    <header><div><b>Teacher tools</b><span id="toolCurrentSlide">Current slide</span></div><button id="closeTeacherTools">✕</button></header>
+    <div class="tool-tabs"><button class="tool-tab active" data-tool-tab="current">This slide</button><button class="tool-tab" data-tool-tab="activities">Activities</button><button class="tool-tab" data-tool-tab="thinking">Critical thinking</button><button class="tool-tab" data-tool-tab="assessment">Assessment</button><button class="tool-tab myth-tab" data-tool-tab="mythbusters">🧪 MythBusters</button></div>
+    <div class="tool-tab-page active" data-tool-page="current">
+    <section class="tool-section tool-current"><h2>Current activity</h2><div id="toolActivityInfo">Open an activity slide to see its equipment, setup and answer here.</div></section>
+    <section class="tool-section"><h2>Class timer</h2><div id="toolTimerDisplay">05:00</div><div class="tool-row"><button data-tool-minutes="1">1 min</button><button data-tool-minutes="2">2 min</button><button data-tool-minutes="5">5 min</button><button data-tool-minutes="10">10 min</button></div><div class="tool-row"><button id="toolTimerPause">Pause</button><button id="toolTimerReset">Reset</button><button id="toolAttention">Attention sound</button></div></section>
+    <section class="tool-section"><h2>Random student or team</h2><textarea id="toolNames" rows="4" placeholder="Paste names or teams, one per line"></textarea><button id="toolPickName">Pick one</button><output id="toolPickedName">Waiting for names</output></section>
+    <section class="tool-section"><h2>Quick response tally</h2><div class="tool-tally"><button data-tally="A">A <b>0</b></button><button data-tally="B">B <b>0</b></button><button data-tally="C">C <b>0</b></button><button data-tally="D">D <b>0</b></button></div><button id="toolResetTally">Reset tally</button></section>
+    <section class="tool-section tool-links"><button id="toolBlankScreen">Blank student screen</button></section></div>
+    <div class="tool-tab-page" data-tool-page="activities"><section class="tool-section"><h2>Activity navigator</h2><p>Activities with apparatus/setup notes are linked to their presentation slides.</p><div id="toolActivityLinks"></div></section><section class="tool-section tool-links"><a href="STUDENT_ACTIVITIES.html" target="_blank">Open Student Activities</a><a href="TEACHER_ACTIVITY_GUIDE.html#activity-bank" target="_blank">Full apparatus & teacher guide</a><a href="TEACHER_TOOLS_COMPLETE.pdf" target="_blank">📕 Teacher Tools PDF</a><a href="WAVES_SOUND_DETAILED_LESSON_PLANS_12.pdf" target="_blank">📙 12 Detailed Lesson Plans</a><a href="WAVES_SOUND_SOW_12_LESSONS.pdf" target="_blank">📘 Waves & Sound SOW</a></section></div>
+    <div class="tool-tab-page" data-tool-page="thinking"><section class="tool-section"><h2>Critical-thinking routine</h2><div class="thinking-cycle"><b>1 Predict</b><span>Students commit before seeing the result.</span><b>2 Test / Watch</b><span>Change one variable or show one short segment.</span><b>3 Evidence</b><span>What exactly did we observe or measure?</span><b>4 Explain</b><span>Use physics vocabulary/equations.</span><b>5 Transfer</b><span>Predict a new case.</span></div></section><section class="tool-section"><h2>PhET</h2><p>Do not demonstrate every control. Give a question, collect predictions, change one variable, measure, then ask students to build a rule and test an untried case.</p></section><section class="tool-section"><h2>Flash animations</h2><p>Pause before the key event. Students sketch the next frame, then run the animation and annotate what changed and what stayed constant.</p></section><section class="tool-section"><h2>Videos</h2><p>Use three stops: prediction before result → evidence after result → transfer to a new situation. Avoid playing a full clip without a question.</p></section><section class="tool-section tool-links"><a href="TEACHER_ACTIVITY_GUIDE.html#critical-thinking" target="_blank">Detailed media teaching guide</a></section></div>
+    <div class="tool-tab-page" data-tool-page="assessment"><section class="tool-section"><h2>Assessment sequence</h2><p>After each topic block: checkpoint slide → part quiz/worksheet → corrections. Finish with the 20-question mixed quiz.</p></section><section class="tool-section tool-links"><a href="ASSESSMENT_BOOK.html" target="_blank">Open Assessment Book</a><a href="ASSESSMENT_ANSWERS.html" target="_blank">Teacher Answer Key</a><a href="STUDENT_WORKBOOK.html" target="_blank">Student Workbook</a><a href="STUDENT_SHEETS_COMPLETE.pdf" target="_blank">📘 Complete Student Sheets PDF</a><a href="TEACHER_TOOLS_COMPLETE.pdf" target="_blank">📕 Complete Teacher Tools PDF</a></section></div>
+<div class="tool-tab-page" data-tool-page="mythbusters"><section class="tool-section"><h2>MythBusters × Waves &amp; Sound</h2><p>Pause before the result: <b>Predict → Evidence → Explain → Evaluate → Transfer.</b></p><div class="myth-tool-list"><article class="myth-tool-card"><b>Breaking Glass</b><span>Season 3, Episode 13</span><p>Resonance, natural frequency, frequency, amplitude and energy transfer by sound</p></article><article class="myth-tool-card"><b>Voice Flame Extinguisher</b><span>Season 5, Episode 7</span><p>Sound as a pressure wave, amplitude, energy and interaction with matter</p></article><article class="myth-tool-card"><b>Deep Space Hollywood</b><span>MythBusters Jr. - Season 1, Episode 8</span><p>Sound needs a medium; particle model and sound in space</p></article></div></section><section class="tool-section tool-links"><a href="MYTHBUSTERS_ACTIVITIES.html" target="_blank">🧪 Open MythBusters activity hub</a><a href="MYTHBUSTERS_WORKSHEETS.pdf" target="_blank">📘 Student worksheet pack</a><a href="MYTHBUSTERS_TEACHER_GUIDE.pdf" target="_blank">📙 Teacher guide / look-fors</a></section></div>
+  </aside>
+  <div id="studentScreenBlank"><strong>Eyes this way</strong><span>Press B or use Teacher Tools to return</span></div>
+  <aside id="studentNotesPanel" aria-label="My lesson notes">
+    <header><div><b>My lesson notes</b><span id="studentNotesLesson">Saved on this laptop</span></div><button id="closeStudentNotes" type="button">✕</button></header>
+    <p>Type your own notes here while following the lesson. They save automatically in this browser.</p>
+    <textarea id="studentNotesText" placeholder="Key ideas, equations, questions I still have…"></textarea>
+    <div class="student-notes-actions"><button id="downloadStudentNotes" type="button">⬇ Download my notes</button><button id="clearStudentNotes" type="button">Clear</button></div>
+  </aside>
+  <div id="fileWarning">For the most reliable Flash, videos and PDF links, open with <strong>START_PRESENTATION.bat</strong>.<button id="closeWarning">×</button></div>
+  <script>
+    window.STUDENT_EDITION = true;
+    window.STUDENT_LESSON = Math.max(0, Math.min(12, Number(new URLSearchParams(location.search).get("lesson")) || 0));
+  </script>
+  <script src="slides.js"></script><script src="app.js"></script><script src="student.js"></script>
+
+<script src="./pwa.js"></script>
+</body>
+</html>

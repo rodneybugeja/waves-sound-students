@@ -1,0 +1,128 @@
+/* Rodney revision: denser use of the canvas, clearer reveals, lesson dividers and sourced practice. */
+.slide { padding:3.25cqw 3.25cqw 2.55cqw; }
+.slide h1 { max-width:94%; font-size:3.45cqw; }
+.slide::after { left:3.25cqw; right:3.25cqw; }
+.lede { max-width:90%; }
+.answer-reveal.showing,
+.answer-reveal.step-mode,
+.answer-reveal.showing.step-mode {
+  border-color:#0d6f45 !important;
+  background:#118553 !important;
+  color:#fff !important;
+  box-shadow:0 .3cqw .8cqw rgba(17,133,83,.25);
+}
+.answer-reveal.showing:hover,
+.answer-reveal.step-mode:hover { background:#0b6f45 !important; color:#fff !important; }
+.quick-resources {
+  position:absolute; z-index:25; top:.55cqw; right:.65cqw;
+  display:flex; gap:.25cqw; flex-wrap:wrap; justify-content:flex-end;
+  max-width:48cqw;
+}
+.quick-resources a {
+  padding:.2cqw .38cqw; border:1px solid #9fc9dd; border-radius:.35cqw;
+  background:rgba(255,255,255,.92); color:#0b6287; text-decoration:none;
+  font-size:.53cqw; line-height:1; font-weight:900; box-shadow:0 .1cqw .25cqw #09253c18;
+}
+.quick-resources a:hover { background:#0b6287; color:#fff; }
+.matsec-ref { top:1.55cqw; right:3.25cqw; }
+.frac { display:inline-grid; grid-template-rows:auto auto; vertical-align:middle; text-align:center; line-height:1.03; margin:0 .15em; }
+.frac > span:first-child { border-bottom:.09em solid currentColor; padding:0 .18em .08em; }
+.frac > span:last-child { padding:.08em .18em 0; }
+.lesson-divider {
+  color:#fff; background:
+    radial-gradient(circle at 82% 38%,rgba(88,230,255,.24),transparent 29%),
+    linear-gradient(135deg,#061426 0%,#0b2d4b 62%,#124962 100%);
+}
+.lesson-divider::after { display:none; }
+.lesson-divider-inner { height:100%; display:grid; grid-template-columns:.72fr 1.28fr; align-items:center; gap:3cqw; }
+.lesson-number { color:#58e6ff; font-size:1.15cqw; font-weight:900; letter-spacing:.14em; text-transform:uppercase; }
+.lesson-divider h1 { max-width:none; margin:.55cqw 0 1cqw; font-size:5.8cqw; line-height:.95; color:#fff; }
+.lesson-divider p { color:#d8edf8; font-size:1.5cqw; line-height:1.4; }
+.lesson-divider .criteria { margin-top:1.5cqw; color:#ffd166; font-weight:900; font-size:1.05cqw; }
+.lesson-divider-visual { min-height:30cqw; display:grid; place-items:center; }
+.lesson-divider-visual .motion-orbit { width:27cqw; height:27cqw; border:1px solid #58e6ff77; border-radius:50%; position:relative; }
+.motion-orbit::before,.motion-orbit::after { content:""; position:absolute; inset:18%; border:1px solid #58e6ff77; border-radius:50%; }
+.motion-orbit::after { inset:36%; background:#58e6ff; border:0; box-shadow:0 0 3cqw #58e6ff; }
+.motion-orbit i { position:absolute; left:50%; top:50%; width:46%; height:.4cqw; transform-origin:left center; background:linear-gradient(90deg,#ffd166,transparent); animation:orbitSpin 4s linear infinite; }
+@keyframes orbitSpin { to { transform:rotate(360deg); } }
+.lesson-divider.stopping-divider .lesson-divider-inner { grid-template-columns:.55fr 1.45fr; }
+.lesson-divider.stopping-divider .media-shell { height:29cqw; aspect-ratio:auto; }
+.topic-links { display:grid; grid-template-columns:repeat(4,1fr); gap:.75cqw; margin-top:1.2cqw; }
+.topic-links a { min-height:4.6cqw; display:flex; align-items:center; gap:.65cqw; padding:.7cqw; border-left:.35cqw solid #58bfe6; border-radius:.45cqw; background:#eef8fc; color:#17354a; text-decoration:none; font-size:.92cqw; font-weight:850; }
+.topic-links a b { color:#0b7299; font-size:1.25cqw; }
+.topic-links a:hover { background:#d8f2fb; transform:translateY(-.08cqw); }
+.wide-canvas .split-media { grid-template-columns:1fr 1fr; gap:1cqw; }
+.big-type .scenario-strip b { font-size:1.8cqw; }
+.big-type .scenario-strip p { font-size:1.35cqw; }
+.big-type .big-rule { font-size:2.25cqw; }
+.flash-dominant { display:grid; grid-template-rows:1fr auto; gap:.7cqw; height:33cqw; }
+.flash-dominant .media-shell { width:100%; height:29.2cqw; aspect-ratio:auto; }
+.flash-dominant .error-trap { margin:0; padding:.55cqw .8cqw; font-size:.9cqw; }
+.formula-first { display:grid; grid-template-rows:auto 1fr; gap:1cqw; }
+.formula-first .motion-equation { font-size:3.2cqw; padding:1cqw; }
+.formula-first .split-media { grid-template-columns:.8fr 1.2fr; }
+.interactive-gradient { height:26cqw; display:grid; grid-template-columns:1fr .4fr; gap:1cqw; }
+.interactive-gradient svg { width:100%; height:100%; }
+.gradient-controls { display:grid; align-content:center; gap:.65cqw; }
+.gradient-controls button,.car-controls button,.ruler-controls button {
+  border:0; border-radius:.55cqw; background:#0b7eaa; color:#fff;
+  padding:.7cqw .9cqw; font-size:.9cqw; font-weight:900; cursor:pointer;
+}
+.gradient-value { padding:.8cqw; border-radius:.5cqw; background:#eaf7fc; font-size:1.05cqw; font-weight:850; text-align:center; }
+.graph-answer { width:100%; max-height:15cqw; }
+.experiment-steps { display:grid; grid-template-columns:repeat(5,1fr); gap:.55cqw; margin-top:1cqw; }
+.experiment-steps > div { min-height:8.4cqw; padding:.8cqw; border-top:.35cqw solid #41c78b; border-radius:.45cqw; background:#eef9f5; }
+.experiment-steps b { display:block; margin-bottom:.35cqw; color:#08704a; font-size:1.05cqw; }
+.experiment-steps p { margin:0; font-size:.83cqw; line-height:1.35; }
+.experiment-why { margin-top:.8cqw; padding:.8cqw 1cqw; background:#fff5cf; border-left:.4cqw solid #e6b629; border-radius:.4cqw; font-size:1.02cqw; }
+.example-reveal { display:grid; grid-template-columns:.8fr 1.2fr; gap:1.2cqw; align-items:start; }
+.example-question { padding:1.2cqw; background:#092a43; color:#fff; border-radius:.7cqw; font-size:1.2cqw; line-height:1.45; }
+.example-reveal .reveal-sequence { min-height:25cqw; }
+.interactive-car-road { height:25cqw; position:relative; overflow:hidden; border-radius:1cqw; background:linear-gradient(#bfe8fa 0 43%,#354c5e 43% 100%); }
+.interactive-car-road::after { content:""; position:absolute; left:0; right:0; top:73%; height:.5cqw; background:repeating-linear-gradient(90deg,#fff 0 5cqw,transparent 5cqw 9cqw); }
+.interactive-car-road .hazard { position:absolute; right:4%; top:31%; font-size:5cqw; }
+.interactive-car-road .demo-car { position:absolute; z-index:3; left:5%; top:39%; font-size:4.8cqw; transform:scaleX(-1); transition:left 3.2s cubic-bezier(.3,.75,.55,1); }
+.interactive-car-road.run .demo-car { left:78%; }
+.yellow-stop-line { position:absolute; z-index:2; right:12%; top:43%; bottom:5%; width:.75cqw; background:#ffd166; box-shadow:0 0 .7cqw #ffd166; }
+.yellow-stop-line span { position:absolute; right:1cqw; top:.4cqw; color:#fff; font-size:.72cqw; font-weight:900; white-space:nowrap; }
+.interactive-car-road .thinking-band,.interactive-car-road .braking-band { position:absolute; top:78%; height:1.8cqw; display:grid; place-items:center; color:#102b3e; font-size:.75cqw; font-weight:900; }
+.interactive-car-road .thinking-band { left:14%; width:29%; background:#ffd166; }
+.interactive-car-road .braking-band { left:43%; width:43%; background:#ff7da4; }
+.car-controls { display:flex; justify-content:center; gap:.6cqw; margin-top:.7cqw; }
+.factor-reveal .reveal-step { min-height:3.5cqw; }
+.kid-physics { display:grid; grid-template-columns:1fr 1fr; gap:1cqw; }
+.kid-physics > div { padding:1.3cqw; border-radius:.7cqw; background:#eef8fc; border-top:.4cqw solid #58bfe6; }
+.kid-physics h2 { font-size:1.8cqw; }
+.kid-physics p { font-size:1.18cqw; line-height:1.4; }
+.big-flash-layout { display:grid; grid-template-columns:1.45fr .55fr; gap:.8cqw; height:31cqw; }
+.big-flash-layout .media-shell { height:31cqw; aspect-ratio:auto; }
+.big-flash-layout .reveal-sequence { min-height:31cqw; }
+.video-max .media-shell { height:32cqw; width:100%; aspect-ratio:auto; }
+.phet-slide { background:radial-gradient(circle at 80% 40%,#6edcff33,transparent 28%),#f7fcff; }
+.phet-layout { display:grid; grid-template-columns:1fr 1fr; gap:1.5cqw; align-items:center; }
+.phet-graphic { min-height:25cqw; border-radius:1cqw; background:#092a43; color:#fff; display:grid; place-items:center; text-align:center; padding:2cqw; }
+.phet-graphic strong { display:block; font-size:3cqw; color:#58e6ff; }
+.phet-open { display:inline-flex; margin-top:1cqw; padding:.8cqw 1.1cqw; border-radius:.6cqw; background:#0b7eaa; color:#fff; font-size:1.1cqw; font-weight:900; text-decoration:none; }
+.ruler-lab { display:grid; grid-template-columns:1fr .65fr; gap:1.2cqw; height:30cqw; }
+.ruler-stage { position:relative; overflow:hidden; border-radius:1cqw; background:linear-gradient(#eaf8ff,#fff); border:1px solid #b9d9e8; }
+.clear-ruler { position:absolute; left:45%; top:1.2cqw; width:5cqw; height:25cqw; border:.18cqw solid #18384c; border-radius:.35cqw; background:repeating-linear-gradient(180deg,#fff 0 .86cqw,#17354a .86cqw 1cqw,#fff 1cqw 1.8cqw); transition:transform .65s cubic-bezier(.25,.75,.4,1); }
+.clear-ruler span { position:absolute; left:.45cqw; color:#071528; font-size:.72cqw; font-weight:950; text-shadow:0 0 .2cqw #fff; }
+.clear-ruler span:nth-child(1){top:.2cqw}.clear-ruler span:nth-child(2){top:5.8cqw}.clear-ruler span:nth-child(3){top:11.6cqw}.clear-ruler span:nth-child(4){top:17.4cqw}.clear-ruler span:nth-child(5){top:22.8cqw}
+.ruler-stage.drop .clear-ruler { transform:translateY(12cqw); }
+.ruler-hand { position:absolute; left:37%; bottom:1.2cqw; font-size:7cqw; }
+.ruler-controls { display:grid; align-content:center; gap:.7cqw; }
+.question-source-slide h1 { font-size:2.65cqw; margin-bottom:.35cqw; }
+.question-source-slide .lede { font-size:1.05cqw; margin-bottom:.5cqw; }
+.source-question-frame { height:33cqw; display:grid; grid-template-columns:1fr auto; gap:.7cqw; align-items:center; }
+.source-question-frame img { width:100%; height:100%; object-fit:contain; background:#fff; border:1px solid #c8dce6; border-radius:.6cqw; }
+.source-question-frame .source-actions { display:grid; gap:.5cqw; width:12cqw; }
+.source-actions a { padding:.65cqw; border-radius:.5cqw; background:#0b7eaa; color:#fff; text-decoration:none; font-size:.8cqw; font-weight:900; text-align:center; }
+.source-actions p { font-size:.73cqw; color:#526f82; line-height:1.3; }
+.ladybug-grid { display:grid; grid-template-columns:1fr .35fr; gap:1cqw; height:32cqw; }
+.ladybug-grid .media-shell { height:32cqw; aspect-ratio:auto; }
+.ladybug-notes { display:grid; align-content:center; gap:.6cqw; }
+.ladybug-notes div { padding:.7cqw; background:#eef8fc; border-left:.3cqw solid #58bfe6; font-size:.86cqw; font-weight:800; }
+@media(max-width:900px){
+  .quick-resources{max-width:62cqw}.quick-resources a{font-size:.65cqw}
+  .topic-links{grid-template-columns:repeat(3,1fr)}
+}

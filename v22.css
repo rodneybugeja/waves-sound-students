@@ -1,0 +1,15 @@
+
+/* V20 lesson-plan guide slides */
+.lesson-plan-slide{background:linear-gradient(145deg,#f7fbff 0%,#eef7ff 52%,#fff9e8 100%);padding:2.2cqw 3.1cqw 2.5cqw}
+.lesson-plan-slide .resource-tabs{opacity:.82}
+.lesson-plan-kicker{display:flex;align-items:center;gap:.65cqw;margin:.2cqw 0 .45cqw}
+.lesson-plan-kicker span,.lesson-plan-kicker b,.lesson-plan-kicker i{display:inline-flex;align-items:center;border-radius:999px;padding:.42cqw .8cqw;font-size:.78cqw;font-style:normal;font-weight:900;letter-spacing:.03em}
+.lesson-plan-kicker span{background:#17365d;color:#fff}.lesson-plan-kicker b{background:#f0b429;color:#102a43}.lesson-plan-kicker i{background:#d9eaf7;color:#17365d}
+.lesson-plan-title{font-size:2.15cqw!important;line-height:1.04;margin:.2cqw 0 .3cqw;color:#102a43}
+.lesson-plan-sub{font-size:.9cqw;margin:0 0 .8cqw;color:#486581;font-weight:700}
+.lesson-plan-grid{display:grid;grid-template-columns:1.05fr .95fr;grid-template-rows:auto auto;gap:.65cqw;height:23.2cqw}
+.lesson-plan-card{background:#fff;border:1px solid #b9d5e8;border-radius:.8cqw;padding:.75cqw .9cqw;box-shadow:0 .22cqw .55cqw rgba(16,42,67,.09);overflow:hidden}
+.lesson-plan-card h2{font-size:1.03cqw;margin:0 0 .42cqw;color:#17365d}.lesson-plan-card ul{margin:0;padding-left:1.15cqw;display:grid;gap:.24cqw}.lesson-plan-card li{font-size:.78cqw;line-height:1.24;color:#243b53}.lesson-plan-card small{display:block;margin-top:.4cqw;font-size:.68cqw;color:#627d98;font-weight:700}
+.lesson-plan-card.route{background:#102a43;border-color:#102a43}.lesson-plan-card.route h2,.lesson-plan-card.route li{color:#fff}.lesson-plan-card.route ul{grid-template-columns:1fr 1fr;column-gap:1cqw}.lesson-plan-card.questions{background:#fff8df;border-color:#f0c85a}.lesson-plan-card.questions li{font-weight:700}
+.lesson-plan-actions{display:flex;align-items:center;gap:.65cqw;margin-top:.75cqw}.lesson-plan-actions a,.lesson-plan-actions button{border:0;border-radius:.62cqw;padding:.62cqw .9cqw;font-size:.78cqw;font-weight:900;text-decoration:none;cursor:pointer}.lesson-plan-actions a{background:#d9eaf7;color:#17365d}.lesson-plan-actions button{margin-left:auto;background:#17365d;color:#fff;box-shadow:0 .2cqw .45cqw rgba(16,42,67,.18)}
+.thumb.lesson-plan-thumb{outline:3px solid #f0b429}

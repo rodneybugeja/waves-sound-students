@@ -1,0 +1,70 @@
+/* V9: keep every practice graph inside the fixed classroom slide area. */
+.v9-slide53 .board-question:nth-child(2)>.v9-contained-graph,
+.v9-slide53 .board-question:nth-child(3)>.v9-contained-graph{
+  grid-row:2!important;
+  min-width:0!important;
+  width:100%!important;
+  height:23cqw!important;
+  max-height:23cqw!important;
+  align-self:start!important;
+  overflow:hidden!important;
+}
+.v9-slide53 .board-question:nth-child(2):not(.revealed)>.v9-contained-graph,
+.v9-slide53 .board-question:nth-child(3):not(.revealed)>.v9-contained-graph{grid-column:1/-1!important}
+.v9-slide53 .board-question:nth-child(2).revealed>.v9-contained-graph,
+.v9-slide53 .board-question:nth-child(3).revealed>.v9-contained-graph{grid-column:1!important;height:22.8cqw!important}
+.v9-slide53 .v9-contained-graph svg{display:block!important;width:100%!important;height:100%!important;max-height:100%!important;overflow:visible!important}
+
+/* Abstract SUVAT slides: one clean prompt and one large, cumulative reveal column. */
+.v9-suvat-abstract .example-reveal{
+  display:grid!important;
+  grid-template-columns:1fr!important;
+  gap:.7cqw!important;
+  width:100%!important;
+  margin-top:.65cqw!important;
+}
+.v9-suvat-abstract .v9-abstract-prompt{
+  margin:0 auto!important;
+  width:min(76cqw,100%)!important;
+  padding:.75cqw 1cqw!important;
+  border-left:.42cqw solid #168db4!important;
+  border-radius:.55cqw!important;
+  background:#eaf7fc!important;
+  color:#092a43!important;
+  font-size:1.18cqw!important;
+  font-weight:900!important;
+}
+.v9-suvat-abstract .reveal-sequence{
+  width:min(76cqw,100%)!important;
+  min-height:0!important;
+  margin:0 auto!important;
+  padding:.65cqw 1cqw!important;
+}
+.v9-suvat-abstract .reveal-list{gap:.28cqw!important}
+.v9-suvat-abstract .reveal-step{grid-template-columns:1.9cqw 1fr!important;gap:.58cqw!important;padding:.34cqw .55cqw!important}
+.v9-suvat-abstract .reveal-step b{width:1.62cqw!important;height:1.62cqw!important;font-size:.82cqw!important}
+.v9-suvat-abstract .reveal-step p{font-size:1cqw!important;line-height:1.2!important}
+.v9-suvat-abstract .reveal-next{margin-top:.45cqw!important;font-size:1cqw!important;padding:.62cqw 1cqw!important}
+
+/* Slide 80 Q4: the complete table stays visible above the in-slide plotting canvas. */
+.v9-slide80 .board-question:nth-child(4)>.inline-plot{
+  grid-template-rows:auto auto minmax(0,1fr)!important;
+  height:23.2cqw!important;
+}
+.v9-slide80 .board-question:nth-child(4) .v9-visible-table{
+  display:table!important;
+  visibility:visible!important;
+  opacity:1!important;
+  width:100%!important;
+  table-layout:fixed!important;
+  font-size:.86cqw!important;
+  line-height:1.08!important;
+}
+.v9-slide80 .board-question:nth-child(4) .v9-visible-table th{width:13cqw!important}
+.v9-slide80 .board-question:nth-child(4) .v9-visible-table th,
+.v9-slide80 .board-question:nth-child(4) .v9-visible-table td{padding:.17cqw .12cqw!important;text-align:center!important}
+.v9-slide80 .board-question:nth-child(4) .inline-plot-tools{min-height:1.6cqw!important}
+
+@media(max-width:900px){
+  .v9-suvat-abstract .reveal-step p{font-size:.94cqw!important}
+}

@@ -1,0 +1,10 @@
+/* V17 contextual MythBusters links on lesson slides */
+.mythbusters-slide-callout{position:absolute;right:2.5cqw;top:4.25cqw;z-index:16;display:flex;flex-direction:column;align-items:stretch;gap:.28cqw;width:min(18cqw,280px);padding:.45cqw;border:1px solid #b9a6e8;border-radius:.75cqw;background:#f8f4ffed;box-shadow:0 .25cqw .75cqw #24314a22;backdrop-filter:blur(4px)}
+.mythbusters-slide-callout .myth-label{font:1000 .64cqw/1.1 Inter,Arial,sans-serif;letter-spacing:.12em;color:#6b4bb3;text-transform:uppercase}
+.mythbusters-slide-callout .myth-title{font:950 .82cqw/1.18 Inter,Arial,sans-serif;color:#15324a}
+.mythbusters-slide-callout .myth-actions{display:flex;gap:.3cqw;flex-wrap:wrap}
+.mythbusters-slide-callout a{display:inline-flex;align-items:center;justify-content:center;min-height:1.75cqw;padding:.28cqw .48cqw;border-radius:.42cqw;text-decoration:none;font:900 .68cqw/1 Inter,Arial,sans-serif}
+.mythbusters-slide-callout .watch{background:#6b4bb3;color:#fff}
+.mythbusters-slide-callout .worksheet{background:#ffd35a;color:#27313b}
+.mythbusters-slide-callout a:hover{filter:brightness(1.08)}
+@media(max-width:900px){.mythbusters-slide-callout{width:20cqw;top:4.5cqw}.mythbusters-slide-callout .myth-label{font-size:.78cqw}.mythbusters-slide-callout .myth-title{font-size:.95cqw}.mythbusters-slide-callout a{font-size:.82cqw}}

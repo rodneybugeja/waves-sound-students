@@ -1,0 +1,30 @@
+/* V3 classroom refinements */
+.tick-label{font-size:13px;font-weight:800;fill:#17354a}
+.media-column{display:grid;grid-template-rows:1fr auto;min-width:0;min-height:0}
+.media-column .media-shell{height:auto!important;min-height:0}
+.teacher-media-layout .media-column .media-shell{height:27.2cqw!important}
+.media-caption-outside{margin:.3cqw 0 0;padding:.45cqw .65cqw;border-left:.3cqw solid #168db4;border-radius:.3cqw;background:#eef8fc;color:#17354a;font-size:.78cqw;font-weight:850;line-height:1.25}
+.wide-canvas .split-media>div:last-child>.media-caption-outside{margin-top:.35cqw}
+.teacher-reveal{display:flex!important;flex-direction:column!important;padding:.65cqw!important}
+.teacher-reveal .reveal-next{position:static!important;order:-1!important;align-self:flex-start;margin:0 0 .55cqw!important;min-height:2.25cqw!important;padding:.42cqw .75cqw!important;z-index:2}
+.teacher-reveal .reveal-list{order:0;width:100%}
+.slide.formula-first .example-reveal{margin-top:.35cqw;align-items:start}
+.slide.formula-first .teacher-reveal{min-height:24cqw!important}
+.v3-no-writing-lines .board-answer{display:none!important}
+.v3-no-writing-lines .board-question{grid-template-rows:auto 1fr!important}
+.v3-no-writing-lines .board-question>.v2-graph,.v3-no-writing-lines .board-question>.plot-task,.v3-no-writing-lines .board-question>.feature-table{grid-column:1;grid-row:2;align-self:start}
+.v3-no-writing-lines .model-answer{grid-column:2;grid-row:2}
+.demo-grid path{stroke:#dce9ef;stroke-width:1;fill:none}
+.interactive-gradient{display:grid!important;height:18.5cqw!important;min-height:0;overflow:visible}
+.interactive-gradient svg{display:block!important;width:100%!important;height:100%!important;overflow:visible}
+.interactive-gradient .gradient-main{stroke:#168db4;stroke-width:6;fill:none}
+.plot-task{display:grid;grid-template-rows:auto 1fr;gap:.3cqw;min-height:0;max-height:19cqw}
+.plot-task .v2-graph{height:15.3cqw;max-height:15.3cqw}
+.data-table,.feature-table{width:100%;border-collapse:collapse;background:#fff;color:#17354a;font-size:.58cqw;text-align:center}
+.data-table th,.data-table td,.feature-table th,.feature-table td{border:1px solid #a9c8d8;padding:.22cqw .18cqw}
+.data-table th,.feature-table th{background:#dff2fa;color:#0b658a;font-weight:900}
+.feature-table{font-size:.74cqw;text-align:left;align-self:start}
+.feature-table th,.feature-table td{padding:.48cqw}
+.v3-top-reveal{min-height:0!important}
+.v3-area-graph{height:28cqw}.v3-area-pair{height:22cqw;margin-top:.45cqw}.v3-area-pair .svg-stage{height:18cqw}.v3-area-pair .graph-card p{margin:.15cqw 0;font-size:.82cqw}
+.slide:nth-child(n) .fillarea{fill:#8ed8ef88}.slide:nth-child(n) .accent{stroke:#168db4;stroke-width:6;fill:none}

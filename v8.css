@@ -1,0 +1,101 @@
+/* V8 keeps the car and runner travelling left to right while their fronts face right. */
+.motion-cover .motion-car{animation:carMoveV8 5.2s linear infinite!important}
+@keyframes carMoveV8{
+  0%{transform:translateX(-11cqw) scaleX(-1);opacity:0}
+  7%{opacity:1}
+  88%{transform:translateX(28cqw) scaleX(-1);opacity:1}
+  89%,100%{transform:translateX(28cqw) scaleX(-1);opacity:0}
+}
+.runner{transform:scaleX(-1);transform-origin:center}
+
+/* Raise the remaining small labels to classroom-readable sizes. */
+.quick-resources a{font-size:.86cqw!important;padding:.4cqw .6cqw!important}
+.source-toolbar a,.source-toolbar button{font-size:.96cqw!important}
+.source-toolbar span{font-size:.9cqw!important}
+.inline-plot-tools strong{font-size:.95cqw!important}
+.inline-plot-tools span,.inline-plot-tools button{font-size:.86cqw!important}
+.v5-expanded-questions .answer-step{font-size:.9cqw!important;line-height:1.3!important}
+.answer-guide{font-size:.9cqw!important}
+.worksheet-question-nav .question-tab,.worksheet-question-nav .answer-reveal{font-size:.88cqw!important}
+
+/* Slides 45 and other dense reveals use the full panel without scrollbars. */
+.v8-slide45 .worksheet-panel{height:35cqw!important}
+.v8-slide45 .worksheet-grid{height:30.2cqw!important}
+.v8-slide45 .board-question{height:29.6cqw!important;overflow:hidden!important}
+.v8-slide45 .model-answer{height:23.6cqw!important;max-height:23.6cqw!important;overflow:hidden!important}
+.v8-slide45 .board-question.revealed>.v2-graph{height:23.3cqw!important;max-height:23.3cqw!important}
+.v8-slide45 .answer-guide{font-size:.85cqw!important;line-height:1.22!important}
+.v8-slide45 .answer-step{font-size:.86cqw!important;line-height:1.22!important;padding:.32cqw .42cqw!important}
+
+/* One layout for every graph that students must plot or sketch. */
+.v8-graph-practice .worksheet-panel{height:35cqw!important;margin-top:.15cqw!important;padding:.55cqw .65cqw!important}
+.v8-graph-practice .worksheet-grid{height:30.2cqw!important;overflow:hidden!important}
+.v8-graph-practice .board-question{height:29.5cqw!important;overflow:hidden!important;grid-template-columns:minmax(0,1.18fr) minmax(0,.82fr)!important;gap:.4cqw .7cqw!important;padding:.5cqw .6cqw!important}
+.v8-graph-practice .board-question>span{font-size:1.18cqw!important;line-height:1.18!important}
+.v8-graph-practice .board-question>.inline-plot{grid-row:2!important;min-width:0;align-self:stretch!important;display:grid!important;grid-template-rows:auto auto minmax(0,1fr)!important;gap:.22cqw!important}
+.v8-graph-practice .board-question:not(.revealed)>.inline-plot{grid-column:1/-1!important;width:100%!important;height:24.2cqw!important}
+.v8-graph-practice .board-question.revealed>.inline-plot{grid-column:1!important;width:100%!important;height:23.2cqw!important}
+.v8-graph-practice .inline-plot-canvas{width:100%!important;height:100%!important;min-height:0!important;border-width:.1cqw!important}
+.v8-graph-practice .model-answer{grid-column:2!important;grid-row:2!important;height:23.2cqw!important;max-height:23.2cqw!important;overflow:hidden!important;padding:.62cqw!important}
+.v8-graph-practice .model-answer>strong{font-size:1.06cqw!important}
+.v8-graph-practice .data-table{font-size:.82cqw!important;line-height:1.08!important}
+.v8-graph-practice .data-table th,.v8-graph-practice .data-table td{padding:.12cqw .1cqw!important}
+.v8-graph-practice .answer-step{font-size:.88cqw!important;line-height:1.27!important;padding:.34cqw .43cqw!important}
+.v8-graph-practice .answer-guide{font-size:.82cqw!important;line-height:1.22!important;padding:.4cqw .48cqw!important}
+.v8-graph-practice .board-answer{display:none!important}
+
+/* The outdoor lesson remains one coherent student-running investigation. */
+.v8-practical-design{display:grid;grid-template-columns:repeat(4,1fr);gap:1cqw;margin-top:1.3cqw}
+.v8-practical-design section{min-height:17cqw;padding:1.25cqw;border-top:.45cqw solid #168db4;border-radius:.85cqw;background:#eef8fc}
+.v8-practical-design section:nth-child(2){border-color:#e9b72f;background:#fff8dc}
+.v8-practical-design section:nth-child(3){border-color:#24a26b;background:#eefaf4}
+.v8-practical-design section:nth-child(4){border-color:#bd6bd7;background:#fbf1ff}
+.v8-practical-design h2{margin:0 0 1cqw;font-size:1.45cqw;color:#0c6584}
+.v8-practical-design strong{display:block;margin-bottom:.65cqw;font-size:1.55cqw;color:#082a43}
+.v8-practical-design p{margin:0;font-size:1.12cqw;line-height:1.42;color:#294b64}
+.v8-practical-note{margin-top:1cqw;padding:1cqw 1.2cqw;border-left:.4cqw solid #168db4;border-radius:.55cqw;background:#fff;font-size:1.1cqw;color:#17354a}
+.v8-results-layout{display:grid;grid-template-columns:1.35fr .65fr;gap:1.2cqw;margin-top:1cqw;height:29cqw}
+.v8-results-table{width:100%;font-size:1cqw!important}
+.v8-results-table th,.v8-results-table td{padding:.7cqw .45cqw!important;text-align:center}
+.v8-calc{display:grid;gap:.7cqw;margin-top:1cqw;padding:1cqw 1.2cqw;border-radius:.7cqw;background:#eef8fc;font-size:1.08cqw}
+.v8-calc b{font-size:1.3cqw;color:#0b678a}
+.v8-bar-chart{padding:1cqw;border-radius:.8cqw;background:#082a43;color:#fff}
+.v8-bar-chart h2{margin:0 0 1cqw;color:#58e6ff;font-size:1.5cqw}
+.v8-bar-chart>div{display:grid;grid-template-columns:3.2cqw 1fr 3cqw;gap:.45cqw;align-items:center;margin:.9cqw 0;font-size:.95cqw;font-weight:900}
+.v8-bar-chart i{display:block;width:var(--bar);height:2.3cqw;border-radius:0 .35cqw .35cqw 0;background:#ffd166}
+.v8-bar-chart p{margin-top:1.3cqw;color:#d9edf8;font-size:.95cqw;line-height:1.35}
+
+/* SUVAT values reveal vertically in the conventional s, u, v, a, t order. */
+.v8-suvat-example .example-reveal{grid-template-columns:.78fr 1.22fr;gap:1cqw}
+.v8-suvat-example .example-question{font-size:1.3cqw;padding:1.2cqw}
+.v8-suvat-example .reveal-list{gap:.24cqw}
+.v8-suvat-example .reveal-step{grid-template-columns:1.75cqw 1fr;gap:.45cqw;padding:.28cqw .48cqw;border-radius:.42cqw}
+.v8-suvat-example .reveal-step b{width:1.5cqw;height:1.5cqw;font-size:.75cqw}
+.v8-suvat-example .reveal-step p{font-size:.9cqw;line-height:1.18}
+.v8-suvat-example .reveal-next{margin-top:.45cqw;padding:.6cqw 1cqw;font-size:.9cqw}
+.v8-suvat-checkpoint .worksheet-panel{height:35cqw!important}
+.v8-suvat-checkpoint .worksheet-grid{height:30cqw!important}
+.v8-suvat-checkpoint .board-question{height:29.2cqw!important;overflow:hidden!important}
+.v8-suvat-checkpoint .model-answer{height:23.6cqw!important;max-height:23.6cqw!important;overflow:hidden!important}
+.v8-suvat-checkpoint .answer-guide{font-size:.86cqw!important}
+.v8-suvat-checkpoint .answer-step{font-size:.91cqw!important;padding:.34cqw .45cqw!important}
+
+/* Embedded higher-resolution stopping-distance video. */
+.v8-video-wrap{position:relative;width:100%;height:29cqw;border-radius:1cqw;overflow:hidden;background:#000;box-shadow:0 1cqw 3cqw #0006}
+.v8-video-wrap iframe{width:100%;height:100%;border:0}
+.v8-video-wrap a{position:absolute;right:.7cqw;bottom:.65cqw;padding:.55cqw .75cqw;border-radius:.45cqw;background:#fff;color:#0b658a;text-decoration:none;font-size:.82cqw;font-weight:900;box-shadow:0 .2cqw .6cqw #0005}
+.v8-video-wrap .v8-offline-video{right:auto;left:.7cqw;background:#102f45;color:#fff}
+
+/* Digital dashboard makes constant velocity during thinking unambiguous. */
+.v8-digital-dashboard{position:absolute;z-index:6;left:1cqw;top:.8cqw;display:grid;grid-template-columns:repeat(3,8.4cqw);gap:.45cqw;padding:.65cqw;border:.12cqw solid #58e6ff;border-radius:.7cqw;background:#061c30ed;color:#fff;box-shadow:0 .35cqw 1cqw #0006}
+.v8-digital-dashboard>div{padding:.35cqw .5cqw;border-radius:.35cqw;background:#0d3450;text-align:center}
+.v8-digital-dashboard span{display:block;color:#86dff8;font-size:.7cqw;font-weight:900;letter-spacing:.08em}
+.v8-digital-dashboard strong{display:block;margin-top:.15cqw;color:#ffd166;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:1.15cqw}
+.v8-digital-dashboard>b{grid-column:1/-1;padding:.35cqw .5cqw;border-radius:.35cqw;background:#087a51;text-align:center;font-size:.8cqw;letter-spacing:.04em}
+.v8-digital-road .thinking-band,.v8-digital-road .braking-band{font-size:.9cqw!important;height:2.1cqw!important}
+.v8-digital-road .demo-car{transform:scaleX(-1)!important}
+
+@media(max-width:900px){
+  .v8-practical-design{gap:.65cqw}.v8-practical-design p{font-size:1cqw}
+  .v8-graph-practice .answer-step{font-size:.82cqw!important}
+}

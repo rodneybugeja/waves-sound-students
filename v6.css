@@ -1,0 +1,22 @@
+/* Slide 24 Q6: retain every cumulative step without scrolling or clipping. */
+.v6-slide24 .worksheet-panel{height:35.1cqw!important}
+.v6-slide24 .worksheet-grid{height:30.25cqw!important}
+.v6-slide24 .board-question{height:29.65cqw!important}
+.v6-slide24 .board-question:nth-child(6).revealed{grid-template-columns:minmax(0,.84fr) minmax(0,1.16fr)!important}
+.v6-slide24 .board-question:nth-child(6).revealed>.inline-plot{height:23.2cqw!important}
+.v6-slide24 .board-question:nth-child(6).revealed>.model-answer{height:23.55cqw!important;max-height:23.55cqw!important;padding:.5cqw!important}
+.v6-slide24 .board-question:nth-child(6) .answer-guide{font-size:.7cqw!important;line-height:1.2!important;padding:.34cqw .42cqw!important;margin-bottom:.25cqw!important}
+.v6-slide24 .board-question:nth-child(6) .answer-step{font-size:.73cqw!important;line-height:1.2!important;padding:.28cqw .38cqw!important}
+.v6-slide24 .board-question:nth-child(6) .model-line-note{background:#e7f7ee!important;border-left-color:#087a51!important}
+
+/* Slide 34 Q4: controls sit above the graph so the axes keep their full width. */
+.v6-slide34 .board-question:nth-child(4)>.interactive-gradient{grid-template-columns:1fr!important;grid-template-rows:2.25cqw minmax(0,1fr)!important;gap:.25cqw!important}
+.v6-slide34 .board-question:nth-child(4)>.interactive-gradient .gradient-controls{grid-row:1!important;display:flex!important;align-items:center!important;gap:.38cqw!important;min-width:0}
+.v6-slide34 .board-question:nth-child(4)>.interactive-gradient .gradient-controls button{padding:.34cqw .62cqw!important;font-size:.72cqw!important;white-space:nowrap}
+.v6-slide34 .board-question:nth-child(4)>.interactive-gradient .gradient-value{flex:1;min-width:0;padding:.38cqw .55cqw!important;font-size:.72cqw!important;text-align:center}
+.v6-slide34 .board-question:nth-child(4)>.interactive-gradient svg{grid-row:2!important;min-height:0!important;width:100%!important;height:100%!important}
+
+/* Slide 46 Q2–Q5: full-width graph before reveal, correctly fitted graph beside the answer. */
+.v6-slide46 .board-question:nth-child(n+2):not(.revealed)>.v2-graph{height:23.8cqw!important;max-height:23.8cqw!important}
+.v6-slide46 .board-question:nth-child(n+2).revealed>.v2-graph{height:21.7cqw!important;max-height:21.7cqw!important;overflow:visible!important}
+.v6-slide46 .board-question:nth-child(n+2)>.v2-graph svg{width:100%!important;height:100%!important;overflow:visible!important}

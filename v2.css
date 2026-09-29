@@ -1,0 +1,69 @@
+/* V2: denser teaching layouts, accessible reveals and an in-slide plotting board. */
+.slide.v2-source-practice h1,.slide.v2-checkpoint h1{font-size:2.45cqw;margin-bottom:.25cqw}
+.slide.v2-source-practice .lede,.slide.v2-checkpoint .lede{font-size:.92cqw;margin-bottom:.35cqw}
+.one-line-formulas{display:grid;grid-template-columns:1fr 1fr;gap:1.2cqw;margin-top:3cqw}
+.one-line-formulas>div{display:flex;min-height:12cqw;flex-direction:column;justify-content:center;align-items:center;padding:1.4cqw;border-radius:1cqw;background:#eef8fc;border-top:.45cqw solid #168db4}
+.one-line-formulas b{font-size:1.4cqw;color:#0b7299;margin-bottom:1cqw}
+.one-line-formulas span{font-size:2cqw;font-weight:900;white-space:nowrap}
+.teacher-media-layout,.sim-teach-layout,.teacher-video-layout{display:grid;grid-template-columns:1.35fr .65fr;gap:1cqw;height:30.5cqw;align-items:stretch}
+.teacher-media-layout .media-shell,.teacher-video-layout .media-shell{width:100%;height:30.5cqw;aspect-ratio:auto}
+.teacher-media-layout video,.teacher-video-layout video{width:100%;height:100%;object-fit:contain;background:#071528}
+.teacher-box{overflow:auto;padding:.9cqw;border-radius:.8cqw;background:#eef8fc;border-left:.38cqw solid #168db4}
+.teacher-box h2{margin:0 0 .6cqw;color:#0b7299;font-size:1.25cqw}
+.teacher-reveal{min-height:0!important;padding:.7cqw!important;background:#fff!important}
+.teacher-reveal .reveal-list{display:grid;gap:.38cqw}
+.teacher-reveal .reveal-step{display:none!important;grid-template-columns:2.1cqw 1fr;gap:.55cqw;align-items:start;min-height:0!important;padding:.5cqw!important;background:#effaf6!important;color:#17354a!important;border-left:.28cqw solid #24a26b}
+.teacher-reveal .reveal-step.shown{display:grid!important}
+.teacher-reveal .reveal-step b{display:grid;place-items:center;width:1.75cqw;height:1.75cqw;border-radius:50%;background:#168db4;color:#fff;font-size:.82cqw}
+.teacher-reveal .reveal-step p{margin:0;font-size:.8cqw;line-height:1.3;color:#17354a}
+.teacher-reveal .reveal-next{margin-top:.55cqw;background:#087a51;color:#fff}
+.covered-example{display:grid;grid-template-columns:.72fr 1.28fr;gap:1.2cqw;align-items:start;margin-top:1.5cqw}
+.question-banner{padding:1.25cqw;border-radius:.75cqw;background:#092a43;color:#fff;font-size:1.3cqw;font-weight:850;line-height:1.35}
+.covered-example>.teacher-reveal{min-height:25cqw!important}
+.logic-chain{display:grid;gap:.65cqw;margin-bottom:.8cqw}
+.logic-chain>div{padding:.75cqw 1cqw;border-radius:.55cqw;background:#eef8fc;font-size:1.15cqw;font-weight:800}
+.logic-chain .answer{background:#e9f8ef;border-left:.4cqw solid #24a26b;color:#075b3b}
+.v2-graph{width:100%;height:auto;max-height:21cqw;background:#fff}
+.v2-graph svg{width:100%;height:100%;display:block}
+.v2-graph .gridline{stroke:#dce9ef;stroke-width:1}.v2-graph .axis{stroke:#17354a;stroke-width:4;fill:none}.v2-graph .accent,.v2-graph .trace{stroke:#168db4;stroke-width:6;fill:none;stroke-linejoin:round;stroke-linecap:round}
+.source-toolbar{display:flex;gap:.65cqw;align-items:center;margin:.35cqw 0 .55cqw}
+.source-toolbar a,.source-toolbar button{border:0;border-radius:.45cqw;background:#0b7eaa;color:#fff;padding:.5cqw .75cqw;text-decoration:none;font-size:.75cqw;font-weight:900;cursor:pointer}
+.source-toolbar button{background:#7552b8}.source-toolbar span{font-size:.7cqw;color:#60798a}
+.v2-source-practice .worksheet-panel,.v2-checkpoint .worksheet-panel{height:31.2cqw;min-height:0;padding:.65cqw .8cqw}
+.v2-source-practice .worksheet-question-nav,.v2-checkpoint .worksheet-question-nav{margin-bottom:.35cqw;gap:.35cqw}
+.v2-source-practice .question-tab,.v2-checkpoint .question-tab{padding:.42cqw .65cqw;font-size:.7cqw}
+.v2-source-practice .answer-reveal,.v2-checkpoint .answer-reveal{margin-left:auto;padding:.48cqw .8cqw;font-size:.72cqw;background:#087a51;color:#fff}
+.v2-source-practice .answer-reveal.showing,.v2-checkpoint .answer-reveal.showing{background:#075b3b;color:#fff}
+.v2-source-practice .worksheet-grid,.v2-checkpoint .worksheet-grid{height:26.5cqw;overflow:hidden}
+.v2-source-practice .board-question,.v2-checkpoint .board-question{height:25.8cqw;display:none;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);grid-template-rows:auto 1fr;gap:.65cqw 1cqw;padding:.8cqw;overflow:auto}
+.v2-source-practice .board-question.active,.v2-checkpoint .board-question.active{display:grid}
+.v2-source-practice .board-question>span,.v2-checkpoint .board-question>span{grid-column:1/-1;font-size:1.2cqw;line-height:1.28;font-weight:900;color:#0d3048}
+.v2-source-practice .board-question>.v2-graph,.v2-checkpoint .board-question>.v2-graph,.v2-source-practice .board-question>.interactive-gradient,.v2-checkpoint .board-question>.interactive-gradient{grid-column:1;grid-row:2;max-height:18.5cqw}
+.v2-source-practice .board-answer,.v2-checkpoint .board-answer{grid-column:1;grid-row:2;align-self:end}
+.v2-source-practice .model-answer,.v2-checkpoint .model-answer{grid-column:2;grid-row:2;align-self:start;max-height:19cqw;overflow:auto;padding:.7cqw;border-radius:.55cqw;background:#edf9f3;color:#163b2d}
+.v2-source-practice .model-answer>strong,.v2-checkpoint .model-answer>strong{display:block;color:#087a51;font-size:.9cqw;margin-bottom:.4cqw}
+.answer-step{display:none;margin:.35cqw 0;padding:.45cqw .55cqw;border-radius:.35cqw;background:#fff;color:#17354a;font-size:.78cqw;line-height:1.35;border-left:.25cqw solid #24a26b}
+.answer-step.visible{display:block}.answer-step strong{color:#087a51}
+.answer-step .v2-graph{margin-top:.4cqw;max-height:11cqw}
+.compact-checkpoint .board-question>span{font-size:1.15cqw}
+.plotter-panel{display:none;position:absolute;z-index:40;inset:5.2cqw 1.1cqw 1.1cqw;padding:.65cqw;border-radius:.8cqw;background:#f8fcfe;border:.15cqw solid #8fc8df;box-shadow:0 .8cqw 2cqw #07152844}
+.plotter-panel.open{display:grid;grid-template-rows:auto 1fr}
+.plotter-head{display:flex;align-items:center;gap:.55cqw;margin-bottom:.45cqw}.plotter-head strong{font-size:1cqw;color:#0b7299}.plotter-head span{font-size:.68cqw;margin-right:auto}.plotter-head label{font-size:.7cqw;font-weight:800}.plotter-head button{border:0;border-radius:.35cqw;background:#17354a;color:#fff;padding:.38cqw .58cqw;font-size:.68cqw;font-weight:800;cursor:pointer}
+.plotter-canvas{width:100%;height:100%;min-height:0;border-radius:.45cqw;background:#fff;touch-action:none;cursor:crosshair}
+.field-practical{display:grid;grid-template-columns:.85fr 1.15fr;gap:1cqw;height:23.5cqw}
+.field-route{position:relative;overflow:hidden;border-radius:.8cqw;background:linear-gradient(#d7f1ff 0 50%,#79be69 50%);border:1px solid #a7ccd9}
+.field-route .cone{position:absolute;bottom:4cqw;font-size:3cqw;color:#ee7928}.field-route .cone:first-child{left:8%}.field-route .cone:nth-child(3){right:8%}
+.route-line{position:absolute;left:13%;right:13%;bottom:4.5cqw;height:.35cqw;background:#fff;box-shadow:0 0 .15cqw #18384c}.route-line span{position:absolute;left:50%;bottom:.5cqw;transform:translateX(-50%);white-space:nowrap;padding:.3cqw .55cqw;border-radius:.3cqw;background:#092a43;color:#fff;font-size:.72cqw;font-weight:900}
+.runner{position:absolute;left:12%;bottom:5cqw;font-size:4.8cqw;animation:student-run 5s ease-in-out infinite}
+@keyframes student-run{0%,15%{left:12%}85%,100%{left:78%}}
+.practical-links{display:grid;grid-template-columns:1fr 1fr;gap:.7cqw;margin-top:.65cqw}.practical-links a{min-height:3.3cqw}
+.v2-car-road .speedometer{position:absolute;z-index:5;left:1.2cqw;top:1cqw;width:8.2cqw;padding:.45cqw;border-radius:.6cqw;background:#071528dd;color:#fff;text-align:center}.speedometer>span{font-size:.65cqw;text-transform:uppercase;letter-spacing:.1em}.speedometer>b{display:block;font-size:.55cqw;color:#ffd166}.dial{position:relative;width:4.6cqw;height:2.3cqw;margin:.25cqw auto;overflow:hidden;border-radius:4.6cqw 4.6cqw 0 0;background:#fff2}.dial:before{content:"";position:absolute;left:.35cqw;right:.35cqw;bottom:-1.85cqw;height:3.7cqw;border:.25cqw solid #58e6ff;border-radius:50%}.dial i{position:absolute;left:50%;bottom:0;width:1.8cqw;height:.16cqw;background:#ff557c;transform-origin:left center;transform:rotate(-20deg);transition:transform 1.4s 1.7s}.v2-car-road.run .dial i{transform:rotate(-155deg)}
+.constant-note{padding:.8cqw;border-left:.4cqw solid #ffd166;background:#fff7d7;font-size:1.02cqw;font-weight:850}
+.important-physics{background:#fff7d7!important;border:.16cqw solid #f0c84b!important;border-top:.5cqw solid #f0c84b!important}.important-physics strong{display:block;margin-top:.7cqw;padding:.55cqw;border-radius:.35cqw;background:#092a43;color:#fff;font-size:1.05cqw}
+.embedded-sim{display:grid;grid-template-rows:1fr auto;min-width:0;overflow:hidden;border-radius:.75cqw;border:1px solid #b7d9e8;background:#fff}.embedded-sim iframe{width:100%;height:100%;min-height:0;border:0}.sim-fallback{padding:.32cqw .55cqw;background:#eaf7fc;font-size:.62cqw}.sim-fallback a{font-weight:900;color:#0b7299}.sim-teach-layout{grid-template-columns:1.5fr .5fr;height:31.3cqw}
+.teacher-video-layout{grid-template-columns:1.4fr .6fr}.youtube-shell{position:relative;overflow:hidden;border-radius:.75cqw;background:#071528}.youtube-shell iframe{width:100%;height:100%;border:0}.video-offline-link{position:absolute;right:.5cqw;bottom:.5cqw;padding:.4cqw .6cqw;border-radius:.35cqw;background:#fff;color:#0b7299;font-size:.65cqw;font-weight:900;text-decoration:none}
+.reaction-note{display:block;margin-top:.7cqw;padding:.8cqw;border-radius:.55cqw;background:#eef8fc;font-size:.9cqw;line-height:1.35}.reaction-note b{display:block;color:#0b7299;margin-bottom:.3cqw}.reaction-note p{margin:0}
+.source-note{margin:.28cqw 0 0;color:#60798a;font-size:.62cqw;text-align:right}
+.flash-teacher-full{display:grid;grid-template-columns:1.5fr .5fr;gap:.8cqw;height:31cqw}.flash-teacher-full .media-shell{height:31cqw;aspect-ratio:auto}
+.white-flash{background:#fff}.white-flash-layout{display:grid;grid-template-columns:1.55fr .45fr;gap:.8cqw;height:31.5cqw}.white-flash-layout .media-shell{height:31.5cqw;aspect-ratio:auto;background:#fff}.white-flash-layout .flash-host,.white-flash-layout ruffle-player{background:#fff!important}
+@media(max-width:900px){.teacher-media-layout,.sim-teach-layout,.teacher-video-layout{grid-template-columns:1.25fr .75fr}.v2-source-practice .board-question>span,.v2-checkpoint .board-question>span{font-size:1.05cqw}}

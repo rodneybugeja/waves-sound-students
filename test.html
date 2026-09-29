@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071528">
+  <meta name="description" content="Interactive MATSEC SEC 24 Physics 2027 Waves presentation.">
+  <title>Waves | MATSEC Physics 2027</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23071528'/%3E%3Cpath d='M4 32c8-22 16 22 24 0s16 22 24 0 8 0 8 0' fill='none' stroke='%2358e6ff' stroke-width='5'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="motion.css"><link rel="stylesheet" href="revision.css">
+  <link rel="stylesheet" href="v2.css"><link rel="stylesheet" href="v3.css"><link rel="stylesheet" href="v4.css"><link rel="stylesheet" href="v5.css"><link rel="stylesheet" href="v6.css"><link rel="stylesheet" href="v7.css"><link rel="stylesheet" href="v8.css"><link rel="stylesheet" href="v9.css"><link rel="stylesheet" href="v10.css"><link rel="stylesheet" href="v11.css"><link rel="stylesheet" href="v12.css"><link rel="stylesheet" href="v13.css"><link rel="stylesheet" href="v14.css"><link rel="stylesheet" href="v15.css"><link rel="stylesheet" href="waves.css">
+  <script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={autoplay:"on",unmuteOverlay:"hidden",backgroundColor:"#ffffff",letterbox:"on",warnOnUnsupportedContent:false,showSwfDownload:false,splashScreen:false,allowScriptAccess:false};</script>
+
+<link rel="manifest" href="./manifest.webmanifest">
+<meta name="theme-color" content="#122b4d">
+<link rel="apple-touch-icon" href="./icon-192.png">
+<link rel="stylesheet" href="./pwa.css">
+</head>
+<body>
+  <main id="viewport"><section id="stage" aria-live="polite"></section></main>
+  <nav id="controls" aria-label="Presentation controls">
+    <div class="control-group"><button id="firstBtn" title="First slide">|◀</button><button id="prevBtn" title="Previous slide">◀</button></div>
+    <div class="deck-status"><span id="counter"></span><span id="slideTitle"></span></div>
+    <div class="control-group right">
+      <div class="jump-control"><span>Slide</span><input id="jumpInput" type="number" inputmode="numeric" min="1" value="1"><button id="jumpBtn" type="button">Go</button></div>
+      <button id="mediaBtn" class="media-control" title="Pause animation (P)">⏸ <span>Pause</span></button>
+      <button id="teacherToolsBtn" title="Teacher tools (K)">🧰 <span>Tools</span></button><button id="thumbBtn" title="All slides (T)">▦</button><button id="fullBtn" title="Full screen (F)">⛶</button><button id="nextBtn">▶</button><button id="lastBtn">▶|</button>
+    </div>
+  </nav>
+  <aside id="thumbPanel"><button id="closeThumbs">✕</button><div id="thumbGrid"></div></aside>
+  <aside id="teacherToolsPanel">
+    <header><div><b>Teacher tools</b><span id="toolCurrentSlide">Current slide</span></div><button id="closeTeacherTools">✕</button></header>
+    <section class="tool-section tool-current"><h2>Current activity</h2><div id="toolActivityInfo">Open an activity slide to see its equipment, setup and answer here.</div></section>
+    <section class="tool-section"><h2>Class timer</h2><div id="toolTimerDisplay">05:00</div><div class="tool-row"><button data-tool-minutes="1">1 min</button><button data-tool-minutes="2">2 min</button><button data-tool-minutes="5">5 min</button><button data-tool-minutes="10">10 min</button></div><div class="tool-row"><button id="toolTimerPause">Pause</button><button id="toolTimerReset">Reset</button><button id="toolAttention">Attention sound</button></div></section>
+    <section class="tool-section"><h2>Random student or team</h2><textarea id="toolNames" rows="4" placeholder="Paste names or teams, one per line"></textarea><button id="toolPickName">Pick one</button><output id="toolPickedName">Waiting for names</output></section>
+    <section class="tool-section"><h2>Quick response tally</h2><div class="tool-tally"><button data-tally="A">A <b>0</b></button><button data-tally="B">B <b>0</b></button><button data-tally="C">C <b>0</b></button><button data-tally="D">D <b>0</b></button></div><button id="toolResetTally">Reset tally</button></section>
+    <section class="tool-section"><h2>Activity navigator</h2><div id="toolActivityLinks"></div></section>
+    <section class="tool-section tool-links"><a href="TEACHER_ACTIVITY_GUIDE.html" target="_blank">Open teacher activity guide</a><a href="STUDENT_WORKBOOK.html" target="_blank">Open student workbook</a><button id="toolBlankScreen">Blank student screen</button></section>
+  </aside>
+  <div id="studentScreenBlank"><strong>Eyes this way</strong><span>Press B or use Teacher Tools to return</span></div>
+  <div id="fileWarning">For the most reliable Flash, videos and PDF links, open with <strong>START_PRESENTATION.bat</strong>.<button id="closeWarning">×</button></div>
+  <script src="slides.js"></script><script src="app.js"></script>
+
+<script src="./pwa.js"></script>
+</body>
+</html>

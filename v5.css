@@ -1,0 +1,67 @@
+/* V5 classroom legibility and full-canvas question layouts. */
+.slide:not(.cover){padding:3.8cqw 3.35cqw 2.85cqw}
+.slide:not(.cover)::after{left:3.35cqw;right:3.35cqw;bottom:1.25cqw}
+.slide:not(.cover) .slide-number{bottom:.58cqw;right:2.25cqw;font-size:.9cqw}
+.slide:not(.cover) h1{max-width:93%;font-size:3.45cqw;line-height:1.02;margin-bottom:.72cqw}
+.slide:not(.cover) .lede{max-width:91%;font-size:1.52cqw;line-height:1.28;margin-bottom:1cqw}
+.slide:not(.cover) .eyebrow{font-size:1.14cqw}
+.slide:not(.cover) p,.slide:not(.cover) li{line-height:1.36}
+.teacher-box h2{font-size:1.38cqw}.teacher-box p,.teacher-box li{font-size:.94cqw}
+.source-toolbar a,.source-toolbar button{font-size:.82cqw}.source-toolbar span{font-size:.76cqw}
+
+.slide.v2-source-practice h1,.slide.v2-checkpoint h1{font-size:2.85cqw;margin-bottom:.2cqw}
+.slide.v2-source-practice .lede,.slide.v2-checkpoint .lede{font-size:1.05cqw;margin-bottom:.22cqw}
+.v5-expanded-questions .source-toolbar{margin:.2cqw 0 .35cqw}
+.v5-expanded-questions .worksheet-panel{height:34.1cqw!important;padding:.6cqw .7cqw!important;margin-top:.2cqw!important}
+.v5-expanded-questions .worksheet-grid{height:29.3cqw!important;overflow:hidden!important}
+.v5-expanded-questions .board-question{height:28.7cqw!important;grid-template-columns:minmax(0,1.28fr) minmax(0,.72fr)!important;grid-template-rows:auto minmax(0,1fr)!important;gap:.45cqw .75cqw!important;padding:.55cqw .65cqw!important;overflow:hidden!important}
+.v5-expanded-questions .board-question>span{grid-column:1/-1!important;font-size:1.28cqw!important;line-height:1.2!important}
+.v5-expanded-questions .worksheet-question-nav{min-height:2.25cqw;margin-bottom:.25cqw!important}
+.v5-expanded-questions .question-tab{font-size:.78cqw!important;padding:.48cqw .75cqw!important}
+.v5-expanded-questions .answer-reveal{font-size:.82cqw!important;padding:.55cqw .85cqw!important}
+
+/* Before an answer is opened, the graph uses both columns. */
+.v5-full-graph-questions .board-question:not(.revealed)>.v2-graph,
+.v5-full-graph-questions .board-question:not(.revealed)>.interactive-gradient,
+.v5-full-graph-questions .board-question:not(.revealed)>.feature-table{
+  grid-column:1/-1!important;grid-row:2!important;width:100%!important;height:23.8cqw!important;max-height:23.8cqw!important
+}
+.v5-full-graph-questions .board-question.revealed>.v2-graph,
+.v5-full-graph-questions .board-question.revealed>.interactive-gradient,
+.v5-full-graph-questions .board-question.revealed>.feature-table{
+  grid-column:1!important;grid-row:2!important;width:100%!important;height:21.7cqw!important;max-height:21.7cqw!important
+}
+.v5-full-graph-questions .board-question>.v2-graph,
+.v5-full-graph-questions .board-question>.interactive-gradient{overflow:visible!important;min-height:0!important}
+.v5-full-graph-questions .board-question>.v2-graph svg,
+.v5-full-graph-questions .board-question>.interactive-gradient svg{display:block!important;width:100%!important;height:100%!important;overflow:visible!important}
+
+/* Inline plotting graph: large before reveal, then a balanced graph/answer split. */
+.v5-large-inline-plot .board-question>.inline-plot{grid-row:2!important;min-width:0;align-self:stretch!important}
+.v5-large-inline-plot .board-question:not(.revealed)>.inline-plot{grid-column:1/-1!important;width:100%!important;height:24cqw!important}
+.v5-large-inline-plot .board-question.revealed>.inline-plot{grid-column:1!important;width:100%!important;height:22cqw!important}
+.v5-large-inline-plot .inline-plot{grid-template-rows:auto auto minmax(0,1fr)!important;gap:.28cqw!important}
+.v5-large-inline-plot .inline-plot-canvas{width:100%!important;height:100%!important;min-height:0!important}
+.v5-large-inline-plot .v4-data-table{font-size:.63cqw!important}
+.v5-large-inline-plot .v4-data-table th,.v5-large-inline-plot .v4-data-table td{padding:.14cqw .13cqw!important}
+.v5-large-inline-plot .inline-plot-tools strong{font-size:.78cqw!important}
+.v5-large-inline-plot .inline-plot-tools span,.v5-large-inline-plot .inline-plot-tools button{font-size:.67cqw!important}
+
+/* Every revealed step remains visible. The panel is deliberately non-scrolling. */
+.v5-expanded-questions .model-answer{grid-column:2!important;grid-row:2!important;align-self:stretch!important;height:21.9cqw!important;max-height:21.9cqw!important;overflow:hidden!important;padding:.65cqw!important}
+.v5-expanded-questions .model-answer>strong{font-size:1.02cqw!important;margin-bottom:.28cqw!important}
+.answer-guide{margin:0 0 .38cqw;padding:.48cqw .55cqw;border-radius:.38cqw;background:#fff7d7;color:#17354a;font-size:.76cqw!important;line-height:1.28!important;border-left:.28cqw solid #e9b72f}
+.answer-guide strong{color:#7b5700}
+.v5-expanded-questions .step-solution{display:grid;gap:.22cqw}
+.v5-expanded-questions .answer-step{margin:0!important;padding:.38cqw .48cqw!important;font-size:.78cqw!important;line-height:1.28!important}
+.v5-expanded-questions .answer-step .v2-graph{height:9.2cqw!important;max-height:9.2cqw!important;margin-top:.25cqw!important}
+.v5-expanded-questions .feature-table{font-size:.72cqw!important}
+
+/* Slide 34: make the graph axes unmistakable, including the fourth question. */
+.v5-bold-axes .v2-graph .axis,.v5-bold-axes .interactive-gradient .axis{stroke:#102f45!important;stroke-width:7!important}
+.v5-bold-axes .tick-label{font-size:16px!important;font-weight:900!important}
+
+@media(max-width:900px){
+  .slide:not(.cover) h1{font-size:3.2cqw}
+  .slide:not(.cover) .lede{font-size:1.35cqw}
+}

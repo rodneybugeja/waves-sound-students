@@ -1,0 +1,27 @@
+/* V4 layout and interaction fixes */
+.wide-canvas .media-column .media-shell{height:28cqw!important;min-height:28cqw!important;aspect-ratio:auto}
+.teacher-qa{overflow:hidden!important}
+.teacher-qa [data-teacher-qa]{margin:.34cqw 0}
+.teacher-qa [data-teacher-qa] button{width:100%;border:0;border-radius:.4cqw;background:#dff2fa;color:#0c4664;padding:.48cqw .6cqw;text-align:left;font-size:.72cqw;font-weight:900;cursor:pointer}
+.teacher-qa [data-teacher-qa] button:after{content:"+";float:right;color:#087a51;font-size:1cqw}
+.teacher-qa [data-teacher-qa].open button:after{content:"−"}
+.teacher-qa [data-teacher-qa] p{display:none;margin:.25cqw 0 0;padding:.42cqw .55cqw;border-left:.25cqw solid #24a26b;background:#fff;color:#17354a;font-size:.68cqw;line-height:1.28}
+.teacher-qa [data-teacher-qa].open p{display:block}
+.v4-top-example.formula-first{display:block!important}
+.v4-top-example .example-reveal{margin-top:.35cqw!important;height:27cqw}
+.v4-top-example .question-banner{align-self:start}
+.v4-visible-axis .board-question,.v4-inline-plot-slide .board-question{overflow:hidden!important}
+.v4-visible-axis .board-question>.v2-graph{height:18cqw!important;min-height:0!important;max-height:18cqw!important;overflow:hidden}
+.v4-visible-axis .board-question>.v2-graph svg{height:100%!important;width:100%!important}
+.v4-no-scroll-reveal .model-answer{height:18.2cqw;max-height:18.2cqw!important;overflow:hidden!important}
+.v4-no-scroll-reveal .answer-step{font-size:.72cqw;line-height:1.25;margin:.22cqw 0;padding:.35cqw .45cqw}
+.v4-no-scroll-reveal .answer-step .v2-graph{height:12.4cqw!important;min-height:0!important;max-height:12.4cqw!important;overflow:hidden}
+.inline-plot{display:grid;grid-template-rows:auto auto 1fr;gap:.2cqw;height:18.4cqw;min-height:0;align-self:start}
+.inline-plot-tools{display:flex;align-items:center;gap:.4cqw;min-height:1.55cqw}
+.inline-plot-tools strong{font-size:.68cqw;color:#0b7299}.inline-plot-tools span{font-size:.58cqw;margin-right:auto;color:#60798a}
+.inline-plot-tools button{border:0;border-radius:.3cqw;background:#17354a;color:#fff;padding:.28cqw .45cqw;font-size:.58cqw;font-weight:850;cursor:pointer}
+.inline-plot-canvas{display:block;width:100%;height:14.2cqw;min-height:0;border:1px solid #b9d5e3;border-radius:.4cqw;background:#fff;touch-action:none;cursor:crosshair}
+.v4-data-table{font-size:.52cqw}.v4-data-table th,.v4-data-table td{padding:.12cqw .1cqw}
+.v4-inline-plot-slide .board-question{grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr)!important;gap:.35cqw .75cqw!important;padding:.45cqw .6cqw!important}
+.v4-inline-plot-slide .board-question>span{font-size:.95cqw!important;line-height:1.15!important}
+.v4-inline-plot-slide .model-answer{height:18.4cqw;max-height:18.4cqw!important}

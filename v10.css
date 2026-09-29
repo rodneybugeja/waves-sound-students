@@ -1,0 +1,14 @@
+/* V10 restores the requested real-life question while keeping the cumulative SUVAT reveal. */
+.v10-suvat-context .v10-context-question{
+  margin:0 auto!important;
+  width:min(78cqw,100%)!important;
+  padding:.9cqw 1.15cqw!important;
+  border-left:.45cqw solid #168db4!important;
+  border-radius:.58cqw!important;
+  background:#eaf7fc!important;
+  color:#082a43!important;
+  font-size:1.22cqw!important;
+  font-weight:900!important;
+  line-height:1.35!important;
+}
+.v10-suvat-context .reveal-sequence{width:min(78cqw,100%)!important}

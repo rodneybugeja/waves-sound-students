@@ -1,0 +1,8 @@
+.v11-three-graph-comparison .board-question:nth-child(5)>span{font-size:1.02cqw!important;line-height:1.32!important}
+.v11-three-graph-comparison .board-question:nth-child(5)>.inline-plot{height:22.5cqw!important}
+.v11-three-graph-comparison .board-question:nth-child(5).revealed>.inline-plot{height:22.1cqw!important}
+.v11-three-graph-comparison .board-question:nth-child(5) .model-answer{height:22.1cqw!important;max-height:22.1cqw!important}
+.v11-three-graph-comparison .board-question:nth-child(5) .answer-step{font-size:.9cqw!important;line-height:1.28!important}
+.v11-baseline-comparison .board-question:nth-child(1) .inline-plot-tools span,
+.v11-baseline-comparison .board-question:nth-child(2) .inline-plot-tools span,
+.v11-three-graph-comparison .inline-plot-tools span{font-weight:800!important;color:#294b64!important}

@@ -1,0 +1,16 @@
+DIRECT STUDENT LESSON LINKS
+
+After you upload the whole folder, replace YOUR-BASE-URL below with the folder URL.
+
+Lesson 01: YOUR-BASE-URL/LESSON_01.html  —  Wave concept: vibrations, energy and medium
+Lesson 02: YOUR-BASE-URL/LESSON_02.html  —  Transverse and longitudinal waves
+Lesson 03: YOUR-BASE-URL/LESSON_03.html  —  Amplitude, wavelength, frequency and period
+Lesson 04: YOUR-BASE-URL/LESSON_04.html  —  Wave speed and wave graphs
+Lesson 05: YOUR-BASE-URL/LESSON_05.html  —  Ripple tank, wavefronts and stroboscope
+Lesson 06: YOUR-BASE-URL/LESSON_06.html  —  Reflection of water waves
+Lesson 07: YOUR-BASE-URL/LESSON_07.html  —  Refraction of water waves
+Lesson 08: YOUR-BASE-URL/LESSON_08.html  —  Diffraction
+Lesson 09: YOUR-BASE-URL/LESSON_09.html  —  Electromagnetic spectrum
+Lesson 10: YOUR-BASE-URL/LESSON_10.html  —  Sound production, medium and speed
+Lesson 11: YOUR-BASE-URL/LESSON_11.html  —  Echoes, pitch, loudness and resonance
+Lesson 12: YOUR-BASE-URL/LESSON_12.html  —  Ultrasound, sonar and echolocation
