@@ -1,4 +1,3 @@
-
 (()=>{
   const qs=(s)=>document.querySelector(s);
   let deferredPrompt=null;
@@ -40,7 +39,7 @@
     try{
       if(!('caches' in window)) throw new Error('This browser does not support offline storage.');
       const list=await fetch('./offline-assets.json',{cache:'no-store'}).then(r=>r.json());
-      const cache=await caches.open('waves-sound-v24-full');
+      const cache=await caches.open('waves-sound-v25-full');
       let done=0, failed=0;
       for(const url of list){
         try{
