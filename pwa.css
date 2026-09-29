@@ -1,8 +1,7 @@
-
-#pwa-tools{position:fixed;right:14px;bottom:72px;z-index:99999;display:flex;gap:8px;align-items:center;font-family:system-ui,-apple-system,Segoe UI,Arial,sans-serif}
-#pwa-tools button{border:0;border-radius:999px;padding:10px 14px;font-weight:800;cursor:pointer;box-shadow:0 4px 16px rgba(0,0,0,.22)}
+#pwa-tools{position:fixed;right:8px;top:7px;bottom:auto;z-index:99999;display:flex;gap:5px;align-items:center;font-family:system-ui,-apple-system,Segoe UI,Arial,sans-serif}
+#pwa-tools button{border:0;border-radius:999px;padding:6px 10px;font-size:11px;line-height:1;font-weight:800;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.28);white-space:nowrap}
 #pwa-install{background:#ffd640;color:#122b4d}
-#pwa-offline{background:#122b4d;color:#fff;border:2px solid #fff!important}
-#pwa-status{position:fixed;right:14px;bottom:122px;z-index:99999;background:#fff;color:#122b4d;border:1px solid #ccd6e0;border-radius:12px;padding:9px 12px;max-width:330px;box-shadow:0 4px 16px rgba(0,0,0,.18);font:700 13px/1.25 system-ui,-apple-system,Segoe UI,Arial,sans-serif;display:none}
-@media(max-width:700px){#pwa-tools{right:8px;bottom:68px}#pwa-tools button{padding:9px 11px;font-size:12px}#pwa-status{right:8px;bottom:116px;max-width:280px}}
+#pwa-offline{background:#122b4d;color:#fff;border:1px solid #fff!important}
+#pwa-status{position:fixed;right:8px;top:43px;bottom:auto;z-index:99999;background:#fff;color:#122b4d;border:1px solid #ccd6e0;border-radius:10px;padding:8px 10px;max-width:300px;box-shadow:0 4px 16px rgba(0,0,0,.18);font:700 12px/1.25 system-ui,-apple-system,Segoe UI,Arial,sans-serif;display:none}
+@media(max-width:700px){#pwa-tools{right:5px;top:5px;gap:4px}#pwa-tools button{padding:5px 7px;font-size:10px}#pwa-status{right:5px;top:37px;max-width:250px;font-size:11px}}
 @media print{#pwa-tools,#pwa-status{display:none!important}}
