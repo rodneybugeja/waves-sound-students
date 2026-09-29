@@ -10,7 +10,7 @@
 
     const tools=document.createElement('div');
     tools.id='pwa-tools';
-    tools.innerHTML='<button id="pwa-install" type="button" hidden>⬇ Install app</button><button id="pwa-offline" type="button">☁ Make available offline</button>';
+    tools.innerHTML='<button id="pwa-install" type="button" hidden>⬇ Install</button><button id="pwa-offline" type="button">☁ Offline</button>';
     document.body.appendChild(tools);
 
     qs('#pwa-offline').addEventListener('click', downloadOffline);
@@ -39,7 +39,7 @@
     try{
       if(!('caches' in window)) throw new Error('This browser does not support offline storage.');
       const list=await fetch('./offline-assets.json',{cache:'no-store'}).then(r=>r.json());
-      const cache=await caches.open('waves-sound-v25-full');
+      const cache=await caches.open('waves-sound-v27-full');
       let done=0, failed=0;
       for(const url of list){
         try{
@@ -57,10 +57,10 @@
       }
       if(failed){
         show(`Offline copy finished, but ${failed} local file(s) could not be saved. Open those items once while online to cache them.`,true);
-        btn.textContent='⚠ Offline copy mostly ready';
+        btn.textContent='⚠ Offline';
       }else{
         show('Offline copy ready. You can now open the installed course without internet. External NASA/YouTube/PhET links still need internet.',true);
-        btn.textContent='✓ Available offline';
+        btn.textContent='✓ Offline';
         localStorage.setItem('wavesSoundOfflineReady','1');
       }
     }catch(e){
@@ -84,7 +84,7 @@
   window.addEventListener('DOMContentLoaded',()=>{
     ensureUI();
     if(localStorage.getItem('wavesSoundOfflineReady')==='1'){
-      const b=qs('#pwa-offline'); if(b) b.textContent='✓ Available offline';
+      const b=qs('#pwa-offline'); if(b) b.textContent='✓ Offline';
     }
     if('serviceWorker' in navigator){
       navigator.serviceWorker.register('./service-worker.js').catch(()=>{});
