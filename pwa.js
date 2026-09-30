@@ -39,7 +39,7 @@
     try{
       if(!('caches' in window)) throw new Error('This browser does not support offline storage.');
       const list=await fetch('./offline-assets.json',{cache:'no-store'}).then(r=>r.json());
-      const cache=await caches.open('waves-sound-v27-full');
+      const cache=await caches.open('waves-sound-v29-full');
       let done=0, failed=0;
       for(const url of list){
         try{
