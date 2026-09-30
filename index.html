@@ -6,6 +6,10 @@
   <meta name="theme-color" content="#071528">
   <meta name="description" content="Interactive MATSEC SEC 24 Physics 2027 Waves & Sound presentation.">
   <title>Waves & Sound | Student Edition | MATSEC Physics 2027</title>
+  <script>
+    // The public root is the lesson chooser. Individual lesson links use ?lesson=1 ... ?lesson=12.
+    if (!new URLSearchParams(location.search).has("lesson")) location.replace("STUDENT_LESSONS.html");
+  </script>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23071528'/%3E%3Cpath d='M4 32c8-22 16 22 24 0s16 22 24 0 8 0 8 0' fill='none' stroke='%2358e6ff' stroke-width='5'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="v22.css"><link rel="stylesheet" href="v21.css"><link rel="stylesheet" href="v20.css"><link rel="stylesheet" href="motion.css"><link rel="stylesheet" href="revision.css"><link rel="stylesheet" href="v16.css">
   <link rel="stylesheet" href="v2.css"><link rel="stylesheet" href="v3.css"><link rel="stylesheet" href="v4.css"><link rel="stylesheet" href="v5.css"><link rel="stylesheet" href="v6.css"><link rel="stylesheet" href="v7.css"><link rel="stylesheet" href="v8.css"><link rel="stylesheet" href="v9.css"><link rel="stylesheet" href="v10.css"><link rel="stylesheet" href="v11.css"><link rel="stylesheet" href="v12.css"><link rel="stylesheet" href="v13.css"><link rel="stylesheet" href="v14.css"><link rel="stylesheet" href="v15.css"><link rel="stylesheet" href="waves.css"><link rel="stylesheet" href="v17.css"><link rel="stylesheet" href="v18.css"><link rel="stylesheet" href="v19.css">
@@ -19,7 +23,7 @@
 <link rel="stylesheet" href="./pwa.css">
 </head>
 <body class="student-edition">
-  <div class="student-edition-badge">STUDENT EDITION • V23</div>
+  <div class="student-edition-badge">STUDENT EDITION • V29</div>
   <main id="viewport"><section id="stage" aria-live="polite"></section></main>
   <nav id="controls" aria-label="Presentation controls">
     <div class="control-group"><button id="firstBtn" title="First slide">|◀</button><button id="prevBtn" title="Previous slide">◀</button></div>
