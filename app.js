@@ -16,10 +16,10 @@
 
   function quickResources() {
     const resources = [
-      ["MATSEC Qs", "assets/pdf/MATSEC-Questions-Booklet-1.pdf"],
-      ["Year 9", "assets/pdf/Year-9-Worksheets-2013.pdf"],
-      ["Waves notes", "assets/pdf/Waves-Notes-Karen.pdf"],
-      ["Syllabus", "assets/pdf/MATSEC-SEC24-Physics-2027.pdf"]
+      ["MATSEC Qs", "https://rodneybugeja.github.io/waves-sound-students/assets/pdf/MATSEC-Questions-Booklet-1.pdf"],
+      ["Year 9", "https://rodneybugeja.github.io/waves-sound-students/assets/pdf/Year-9-Worksheets-2013.pdf"],
+      ["Waves notes", "https://rodneybugeja.github.io/waves-sound-students/assets/pdf/Waves-Notes-Karen.pdf"],
+      ["Syllabus", "https://rodneybugeja.github.io/waves-sound-students/assets/pdf/MATSEC-SEC24-Physics-2027.pdf"]
     ];
     return `<nav class="quick-resources" aria-label="Lesson resources">${resources.map(([label, href]) => `<a href="${href}" target="_blank" rel="noopener">${label}</a>`).join("")}</nav>`;
   }
