@@ -1,4 +1,4 @@
-const VERSION='waves-sound-v28';
+const VERSION='waves-sound-v29';
 const SHELL=VERSION+'-shell';
 const FULL=VERSION+'-full';
 const SHELL_FILES=[
