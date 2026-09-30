@@ -343,9 +343,9 @@
 
   // V17: contextual MythBusters episode links on the lesson slides where the physics is taught.
   var V17_MYTH_LINKS={
-    66:{title:'Can You Hear a Scream in Space? • MythBusters Jr.',watch:'https://www.youtube.com/watch?v=BDPTwvuXTHs&list=PL39_ud5aKSvlTGn49uRr0YMMy4P_bckw_&index=14',hub:'MYTHBUSTERS_ACTIVITIES.html#episode-3'},
-    77:{title:'Voice Flame Extinguisher • MythBusters',watch:'https://www.youtube.com/watch?v=jA3z7jSMFxw',hub:'MYTHBUSTERS_ACTIVITIES.html#episode-2'},
-    78:{title:'Breaking Glass • MythBusters',watch:'https://www.youtube.com/watch?v=HJ_g8pHEg9c',hub:'MYTHBUSTERS_ACTIVITIES.html#episode-1'}
+    66:{title:'Can You Hear a Scream in Space? • MythBusters Jr.',watch:'assets/media/scream-in-space.mp4',hub:'MYTHBUSTERS_ACTIVITIES.html#episode-3'},
+    77:{title:'Voice Flame Extinguisher • MythBusters',watch:'https://tv.apple.com/us/episode/voice-flame-extinguisher/umc.cmc.6rpeex822gjydsnavc84exuz4',hub:'MYTHBUSTERS_ACTIVITIES.html#episode-2'},
+    78:{title:'Breaking Glass • MythBusters',watch:'assets/media/glass-breaking-resonance.mp4',hub:'MYTHBUSTERS_ACTIVITIES.html#episode-1'}
   };
   function v17MythCallout(m){return '<aside class="mythbusters-slide-callout"><span class="myth-label">🧪 MythBusters connection</span><span class="myth-title">'+m.title+'</span><div class="myth-actions"><a class="watch" href="'+m.watch+'" target="_blank" rel="noopener">▶ Open episode ↗</a><a class="worksheet" href="'+m.hub+'" target="_blank" rel="noopener">📝 Activity</a></div></aside>';}
   slides.forEach(function(s){var m=V17_MYTH_LINKS[Number(s.sourceSlide)];if(m && !s.activitySlide){s.html+=v17MythCallout(m);}});
